@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab01_variables" />
+        <module name="ShoppingTotal" />
+        <module name="StudentDetail" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lab01_variables" target="27" />
+    </bytecodeTargetLevel>
   </component>
 </project>
