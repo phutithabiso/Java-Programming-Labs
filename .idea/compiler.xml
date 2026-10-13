@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StudentDetail" />
         <module name="TemperatureConverter" />
+        <module name="StudentDetail" />
         <module name="Decision" />
+        <module name="lab03_Arrays" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
