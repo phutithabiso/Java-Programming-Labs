@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ShoppingTotal" />
         <module name="StudentDetail" />
+        <module name="TemperatureConverter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="lab01_variables" target="27" />
+      <module name="Lab02_Statements-and-Decision" target="27" />
+      <module name="ShoppingTotal" target="27" />
     </bytecodeTargetLevel>
   </component>
 </project>
