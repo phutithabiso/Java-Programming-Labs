@@ -11,7 +11,7 @@ public class StudentMarks {
             IO.println("Student " + (i + 1) + ": " + marks[i]);
             total = marks[i];
             // Calculate the average
-            double average = (double) total / marks.length;
+            double average = total / marks.length;
             //display
             IO.println("Total marks: " + total);
             IO.println("Average mark: " + average);

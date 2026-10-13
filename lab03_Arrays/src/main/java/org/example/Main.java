@@ -12,9 +12,9 @@ public class Main {
         if (a == 1) {
 
             dis.students();
+        } else if (a == 2) {
+            dis.runStatistics();
         } else if (a == 3) {
-
-        } else if (a == 4) {
 
         } else {
             IO.println("Invaild Number");
