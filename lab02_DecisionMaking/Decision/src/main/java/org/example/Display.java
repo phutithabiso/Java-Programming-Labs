@@ -3,8 +3,10 @@ package org.example;
 public class Display {
 
     public static void qq(){
-        IO.println("enter 1 for Passed or Faild Student ");
-        IO.println("enter 2 for To see Passed Student");
+        IO.println("Enter 1: for Passed or Faild Student ");
+        IO.println("Enter 2: for To see Passed Student");
+        IO.println("Enter 3: Check whether the number is positive, negative, or zero");
+        IO.println("Enter 4: Login Check");
     }
     public  static void runPassedSud(){
         IO.println("======================");
@@ -27,6 +29,21 @@ public class Display {
         grade.calculator(50);
         grade.calculator(50);
         grade.calculator(50);
+
+    }
+    public static void runNumeric(){
+        //display numeric
+        NumberAnalysis num = new NumberAnalysis();
+        num.analyzeNumber(2);
+        num.analyzeNumber(7);
+        num.analyzeNumber(10);
+        num.analyzeNumber(-7);
+        num.analyzeNumber(-3);
+    }
+    public static void runLogin(){
+        LoginCheck in = new LoginCheck();
+       in.login("Thabiso","Password11" );
+
 
     }
 }
