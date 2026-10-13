@@ -5,7 +5,7 @@ public class Display {
     public static void display() {
         IO.println("Enter 1:  Display the total and average.");
         IO.println("Enter 2: To find the largest value, smallest value, and number of elements.");
-        IO.println("Enter 3:");
+        IO.println("Enter 3: Search the  index");
         IO.println("Enter 4: ");
     }
     //display   for student marks
@@ -18,4 +18,9 @@ public class Display {
         ArrayStatistics arr = new ArrayStatistics();
         arr.statistics();
     }
+    static  void runsearch(){
+        ArraySearch src = new ArraySearch();
+       src.search();
+    }
+
 }

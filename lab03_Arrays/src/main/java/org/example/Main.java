@@ -15,6 +15,8 @@ public class Main {
         } else if (a == 2) {
             dis.runStatistics();
         } else if (a == 3) {
+            dis.runsearch();
+        } else if (a == 4) {
 
         } else {
             IO.println("Invaild Number");
