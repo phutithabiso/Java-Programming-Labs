@@ -17,7 +17,7 @@ public class Main {
         } else if (a == 3) {
             dis.runsearch();
         } else if (a == 4) {
-
+            dis.runCountOdd();
         } else {
             IO.println("Invaild Number");
         }
