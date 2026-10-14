@@ -7,13 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TemperatureConverter" />
-        <module name="Constuctor" />
+        <module name="lab04_Classes_Objects" />
         <module name="StudentDetail" />
         <module name="Decision" />
         <module name="lab03_Arrays" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Constuctor" target="27" />
       <module name="lab01_variables" target="27" />
       <module name="Lab02_Statements-and-Decision" target="27" />
       <module name="ShoppingTotal" target="27" />

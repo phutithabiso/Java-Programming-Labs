@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Constuctor</artifactId>
+    <artifactId>lab04_Classes_Objects</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
