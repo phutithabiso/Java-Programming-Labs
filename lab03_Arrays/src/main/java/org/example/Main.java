@@ -18,7 +18,10 @@ public class Main {
             dis.runsearch();
         } else if (a == 4) {
             dis.runCountOdd();
-        } else {
+        } else if (a ==5) {
+            dis.runReverce();
+
+      } else {
             IO.println("Invaild Number");
         }
 

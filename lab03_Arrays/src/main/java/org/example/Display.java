@@ -31,4 +31,15 @@ public class Display {
         IO.println("Odd Numbers: "+ result);
         IO.println("Even Numbers: "+ rslt);
     }
+    static void runReverce(){
+        ReverseArray rv =new ReverseArray();
+         int[] num ={1,2,3,4,5,6,7,8};
+        IO.println("==== Normal Number===");
+        rv.normal(num);
+        IO.println("======================");
+          IO.println("==== Reverced Number===");
+         rv.reverce(num);
+        IO.println("======================");
+
+    }
 }
