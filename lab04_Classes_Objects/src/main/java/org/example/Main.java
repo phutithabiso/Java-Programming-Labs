@@ -12,7 +12,7 @@ public class Main {
            dis.runstudent();
 
         } else if (a == 2) {
-
+            dis.runBalance();
         } else if (a == 3) {
 
         } else if (a == 4) {
