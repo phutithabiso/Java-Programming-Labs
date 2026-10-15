@@ -3,6 +3,7 @@ package org.example;
 public class Display {
     //display the main page
     static void display() {
+        IO.println("=== Menu ===");
         IO.println("Enter 1:   Student class");
         IO.println("Enter 2:  Bank account");
         IO.println("Enter 3:  Product inventory");
@@ -103,11 +104,21 @@ public class Display {
 
          } else if (choice == 5) {
              IO.println("See you soon");
+             display();
              run = false;
 
          } else {
              IO.println("Invalid. Try again.");
          }
      }
+ }
+ void runRegtangle(){
+        Rectangle reg = new Rectangle(3,5);
+        IO.println("==== Regtangle ===");
+        reg.displayDetails();
+        IO.println("=== Calculation ===");
+        IO.println("Calculating Area: "+ reg.getArea());
+        IO.println("Calculating Dimention: "+ reg.getDiamention());
+
  }
 }

@@ -22,6 +22,7 @@ public class Product {
         IO.println("Price: R" + price);
         IO.println("Quantity: " + stockQuantity);
         IO.println("Stock Value: R" + calculateStockValue());
+
     }
 
     public void addStock(int quantity) {
@@ -48,10 +49,12 @@ public class Product {
     }
 
     public double calculateStockValue() {
+
         return price * stockQuantity;
     }
 
     public int getStockQuantity() {
+
         return stockQuantity;
     }
 }

@@ -16,7 +16,7 @@ public class Main {
         } else if (a == 3) {
             dis.runProduct();
         } else if (a == 4) {
-
+            dis.runRegtangle();
 
         } else {
             IO.println("Invaild Number");
