@@ -14,10 +14,8 @@ public class Main {
         } else if (a == 2) {
             dis.runBalance();
         } else if (a == 3) {
-
+            dis.runProduct();
         } else if (a == 4) {
-
-
 
 
         } else {

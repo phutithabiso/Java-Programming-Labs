@@ -51,4 +51,63 @@ public class Display {
 
 
     }
+ void runProduct(){
+     Product pdc = new Product(101, "Laptop", 18000.00, 5);
+
+     boolean run = true;
+
+     while (run) {
+
+         IO.println("""
+
+                === INVENTORY MANAGEMENT ===
+                1. View product
+                2. Add stock
+                3. Sell product
+                4. Check stock status
+                5. Exit
+                """);
+
+         int choice = Integer.parseInt(IO.readln("Choose an option: "));
+
+         if (choice == 1) {
+             pdc.displayDetails();
+
+         } else if (choice == 2) {
+             int qyt = Integer.parseInt(
+                     IO.readln("Enter product quantity to add: ")
+             );
+
+             pdc.addStock(qyt);
+
+         } else if (choice == 3) {
+             int qty= Integer.parseInt(
+                     IO.readln("Enter quantity to sell: ")
+             );
+
+             pdc.sellProduct(qty);
+
+         } else if (choice == 4) {
+
+             int stock = pdc.getStockQuantity();
+
+             if (stock == 0) {
+                 IO.println("OUT OF STOCK");
+
+             } else if (stock <= 5) {
+                 IO.println("LOW STOCK: Reorder soon.");
+
+             } else {
+                 IO.println("STOCK AVAILABLE");
+             }
+
+         } else if (choice == 5) {
+             IO.println("See you soon");
+             run = false;
+
+         } else {
+             IO.println("Invalid. Try again.");
+         }
+     }
+ }
 }
