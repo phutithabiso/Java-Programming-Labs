@@ -4,26 +4,29 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
+        boolean run = true;
+        while (run) {
+            Display dis = new Display();
+            dis.display();
+            IO.println("Select Option to display ");
+            int a = Integer.parseInt(IO.readln());
+            if (a == 1) {
 
-        Display dis = new Display();
-        dis.display();
-        IO.println("Select Option to display ");
-        int a = Integer.parseInt(IO.readln());
-        if (a == 1) {
+                dis.students();
+            } else if (a == 2) {
+                dis.runStatistics();
+            } else if (a == 3) {
+                dis.runsearch();
+            } else if (a == 4) {
+                dis.runCountOdd();
+            } else if (a == 5) {
+                dis.runReverce();
 
-            dis.students();
-        } else if (a == 2) {
-            dis.runStatistics();
-        } else if (a == 3) {
-            dis.runsearch();
-        } else if (a == 4) {
-            dis.runCountOdd();
-        } else if (a ==5) {
-            dis.runReverce();
-
-      } else {
-            IO.println("Invaild Number");
+            } else {
+                IO.println("Invaild Number");
+                dis.display();
+                run = false;
+            }
         }
-
     }
 }

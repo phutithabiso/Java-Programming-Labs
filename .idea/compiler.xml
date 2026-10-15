@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TemperatureConverter" />
         <module name="lab04_Classes_Objects" />
+        <module name="Lab05_Combining_Concepts" />
         <module name="StudentDetail" />
         <module name="Decision" />
         <module name="lab03_Arrays" />
@@ -18,6 +19,7 @@
       <module name="lab01_variables" target="27" />
       <module name="Lab02_Statements-and-Decision" target="27" />
       <module name="ShoppingTotal" target="27" />
+      <module name="Student" target="27" />
     </bytecodeTargetLevel>
   </component>
 </project>
