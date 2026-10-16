@@ -105,9 +105,23 @@ public class Display {
                 new Employee(105, "Kabelo", 28000)
         };
 
+        double threshold = 15000;
 
+        displayEmployees(em);
 
     }
+
+    // Display every employee
+    static void displayEmployees(Employee[] employees) {
+
+        IO.println("===== ALL EMPLOYEES =====");
+
+        for (int i = 0; i < employees.length; i++) {
+            employees[i].displayDetails();
+        }
+    }
+
+
 }
 
 
