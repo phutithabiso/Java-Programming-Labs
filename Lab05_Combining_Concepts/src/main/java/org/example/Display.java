@@ -95,7 +95,19 @@ public class Display {
         IO.println("Final total: R" + finalTotal);
         IO.println("=============================");
     }
+   // for employee
+    static void runEmployee() {
+        Employee[] em = {
+                new Employee(101, "Thabo", 8500),
+                new Employee(102, "Lerato", 12500),
+                new Employee(103, "Sipho", 22000),
+                new Employee(104, "Naledi", 17500),
+                new Employee(105, "Kabelo", 28000)
+        };
 
+
+
+    }
 }
 
 
