@@ -8,7 +8,8 @@ public class Student {
     public Student(String studentNo, String name, int[] marks) {
         this.studentNo = studentNo;
         this.name = name;
-        this.marks = marks;
+        //this.marks = marks;
+        setMarks(marks);
     }
 
     public String getStudentNo() {
@@ -23,11 +24,13 @@ public class Student {
         return marks.clone();
     }
 
-    public void setStudentNo(String studentNo) {
+    public void setStudentNo(
+            String studentNo) {
         this.studentNo = studentNo;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 

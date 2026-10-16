@@ -19,7 +19,7 @@ public class Main {
             if (choice == 1) {
                 dis.runStudent();
             } else if (choice == 2) {
-
+                dis.runProduct();
             } else if (choice == 3) {
 
             } else {
@@ -27,7 +27,6 @@ public class Main {
 
                 run = false;
             }
-
         }
     }
 }
