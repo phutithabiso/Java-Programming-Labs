@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Lab05_Combining_Concepts" />
+        <module name="lab03_Arrays" />
         <module name="TemperatureConverter" />
         <module name="lab04_Classes_Objects" />
-        <module name="Lab05_Combining_Concepts" />
         <module name="StudentDetail" />
         <module name="Decision" />
-        <module name="lab03_Arrays" />
+        <module name="Lab06_Debugging" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
