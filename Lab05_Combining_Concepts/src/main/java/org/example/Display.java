@@ -108,7 +108,17 @@ public class Display {
         double threshold = 15000;
 
         displayEmployees(em);
+        displayAboveThreshold(em, threshold);
 
+        Employee highest = HighestPaid(em);
+
+        IO.println("===== HIGHEST-PAID EMPLOYEE =====");
+        IO.println("Name: " + highest.getName());
+        IO.println("Salary: R" + highest.getSalary());
+        IO.println("======Total======");
+        IO.println("Total Salary: R" + calculateTotal(em));
+        IO.println("Average Salary: R" + calculateAverage(em));
+        IO.println("*********************************");
     }
 
     // Display every employee
@@ -121,7 +131,53 @@ public class Display {
         }
     }
 
+    // Display employees earning above the threshold
+    static void displayAboveThreshold( Employee[] employees, double threshold) {
 
+        IO.println("\n===== SALARIES ABOVE R" + threshold + " =====");
+
+        for (int i = 0; i < employees.length; i++) {
+
+            if (employees[i].getSalary() > threshold) {
+                IO.println(employees[i].getName() + " - R" + employees[i].getSalary()
+                );
+            }
+        }
+    }
+
+    // Find the employee with the highest salary
+    static Employee HighestPaid(Employee[] employees) {
+
+        Employee highest = employees[0];
+
+        for (int k = 1;k < employees.length;k++) {
+
+            if (employees[k].getSalary()
+                    > highest.getSalary()) {
+
+                highest = employees[k];
+            }
+        }
+
+        return highest;
+    }
+
+    // Calculate total salary
+    static double calculateTotal(Employee[] employees) {
+        double total = 0;
+        for (int k = 0; k < employees.length; k++) {
+            total += employees[k].getSalary();
+        }
+        return total;
+    }
+
+    // Calculate average salary
+    static double calculateAverage(Employee[] employees) {
+        if (employees.length == 0) {
+            return 0;
+        }
+        return calculateTotal(employees) / employees.length;
+    }
 }
 
 

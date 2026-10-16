@@ -21,7 +21,7 @@ public class Main {
             } else if (choice == 2) {
                 dis.runProduct();
             } else if (choice == 3) {
-
+                dis.runEmployee();
             } else {
                 IO.println("Invaild Number");
 

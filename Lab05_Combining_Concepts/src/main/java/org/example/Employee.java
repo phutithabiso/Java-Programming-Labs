@@ -38,7 +38,7 @@ public class Employee {
         IO.println("Employee Number: " + employeeNo);
         IO.println("Name: " + name);
         IO.println("Monthly Salary: R" + salary);
-        IO.println("Salary Category: " + classifySalary());
-        IO.println("============================temme");
+        IO.println("Salary Categories: " + classifySalary());
+        IO.println("============================");
     }
 }
